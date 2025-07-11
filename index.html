@@ -23,10 +23,22 @@
       margin: 30px 0;
     }
 
-    .gallery img, .gallery video {
-      width: 100%;
+    .gallery-item {
+      background: white;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
     }
 
     footer {
@@ -44,29 +56,33 @@
   <section>
     <h2>Project Photos</h2>
     <div class="gallery">
-      <img src="Images/APM_2.8_Config.jpg" alt="Pin-Configuration">
-      <img src="Images/Block_Diagram.png" alt="System Architecture-Block Diagram">
-      <img src="Images/Circuit_Diagram.jpg" alt="Circuit Diagram">
-      <img src="Images/F450_quadcopter_frame.jpg" alt="AirFrame of UAV">
-      <img src="Images/Gps_Module.jpg" alt="Gps Module">
-      <img src="Images/Picture.png" alt="Face Detection Output">
-      <img src="Images/Ground_Testing.jpg" alt="Ground Testing">
-      <img src="Images/Radio_Tx_Rx.jpg" alt="Radio Transmitter and Receiver">
-      <img src="Images/Ongoing.jpg" alt="Setuping APM 2.8">
+      <div class="gallery-item"><img src="Images/APM_2.8_Config.jpg" alt="Pin-Configuration"></div>
+      <div class="gallery-item"><img src="Images/Block_Diagram.png" alt="System Architecture-Block Diagram"></div>
+      <div class="gallery-item"><img src="Images/Circuit_Diagram.jpg" alt="Circuit Diagram"></div>
+      <div class="gallery-item"><img src="Images/F450_quadcopter_frame.jpg" alt="AirFrame of UAV"></div>
+      <div class="gallery-item"><img src="Images/Gps_Module.jpg" alt="Gps Module"></div>
+      <div class="gallery-item"><img src="Images/Picture.png" alt="Face Detection Output"></div>
+      <div class="gallery-item"><img src="Images/Ground_Testing.jpg" alt="Ground Testing"></div>
+      <div class="gallery-item"><img src="Images/Radio_Tx_Rx.jpg" alt="Radio Transmitter and Receiver"></div>
+      <div class="gallery-item"><img src="Images/Ongoing.jpg" alt="Setuping APM 2.8"></div>
     </div>
   </section>
 
   <section>
     <h2>Project Videos</h2>
     <div class="gallery">
-      <video controls>
-        <source src="Videos/VID-20240428-WA0026.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="Videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="gallery-item">
+        <video controls>
+          <source src="Videos/VID-20240428-WA0026.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="gallery-item">
+        <video controls>
+          <source src="Videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   </section>
 
